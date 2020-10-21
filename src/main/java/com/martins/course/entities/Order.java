@@ -32,7 +32,9 @@ public class Order implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "client_id")
 	private User client;
-
+ 
+	 
+	
 	public Order() {
 
 	}
