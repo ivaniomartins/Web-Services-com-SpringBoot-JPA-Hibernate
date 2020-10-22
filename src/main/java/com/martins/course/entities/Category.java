@@ -25,6 +25,7 @@ public class Category implements Serializable {
 
 	@JsonIgnore
 	@ManyToMany(mappedBy = "categories")
+	//Set = Conjunto - evita que o mesmo produto tenha a mesma categoria.
  	private Set<Product> products = new HashSet<>();
 
 	public Category() {
